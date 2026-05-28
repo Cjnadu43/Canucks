@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Canucks Trivia Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Trivia Quiz</h1>
+      <a href="index.html">Back</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Test your Canucks knowledge</h2>
+      <div id="quiz">
+        <p id="question"></p>
+        <div id="answers">
+          <button class="quiz-btn" data-index="0"></button>
+          <button class="quiz-btn" data-index="1"></button>
+          <button class="quiz-btn" data-index="2"></button>
+        </div>
+        <p id="quiz-result" aria-live="polite"></p>
+        <button id="next-btn" hidden>Next Question</button>
+        <button id="restart-btn" hidden>Restart Quiz</button>
+        <p id="quiz-score"></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Canucks Fan Page</p>
+  </footer>
+</body>
+</html>

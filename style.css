@@ -1,0 +1,182 @@
+/* Personal Portfolio Styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url("./bg.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+header,
+section,
+footer {
+    background: linear-gradient(135deg, rgba(0, 32, 91, 0.95) 0%, rgba(0, 132, 61, 0.95) 60%);
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 132, 61, 0.85);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+section {
+    position: relative;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background: #00843D;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+section h2 {
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+section article {
+    margin-bottom: 18px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+
+.achievement-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.achievement-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 20px;
+    border-radius: 16px;
+    min-height: 180px;
+}
+
+.achievement-card h3 {
+    margin-top: 0;
+    color: #74C4E0;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 999px;
+    transition: background 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: #74C4E0;
+    transform: translateY(-1px);
+}
+
+#hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #00205B 0%, #00843D 45%, #74C4E0 100%);
+    border: 2px solid #00843D;
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+h1, h2, h3 {
+    margin: 0 0 16px;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: left;
+}
+
+table th {
+    background: rgba(0, 132, 61, 0.18);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+table tr.highlight-row {
+    background: rgba(0, 132, 61, 0.18);
+}
+
+table tr.highlight-row td {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+}
