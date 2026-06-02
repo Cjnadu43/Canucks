@@ -5,27 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vancouver Canucks 2024 Review</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shared.css">
+    <script src="shared.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <h1>Vancouver Canucks</h1>
-            <ul>
-                <li><a href="#about">History</a></li>
-                <li><a href="#season">2023/24 Season</a></li>
-                <li><a href="#players">Players</a></li>
-                <li><a href="#roster">Roster</a></li>
-                <li><a href="#player-achievements">Achievements</a></li>
-                <li><a href="#accomplishments">Accomplishments</a></li>
-                <li><a href="#culture">Fan Culture</a></li>
-                <li><a href="#why">Why They Matter</a></li>
-                <li><a href="#moments">Memorable Moments</a></li>
-                <li><a href="./option2/index.html">Theme 2</a></li>
-            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <ul class="primary">
+                    <li><a href="#about">History</a></li>
+                    <li><a href="#season">2023/24 Season</a></li>
+                    <li><a href="#players">Players</a></li>
+                    <li><a href="#roster">Roster</a></li>
+                    <li><a href="#player-achievements">Achievements</a></li>
+                    <li><a href="#accomplishments">Accomplishments</a></li>
+                </ul>
+                <ul class="secondary">
+                    <li><a href="#culture">Fan Culture</a></li>
+                    <li><a href="#why">Why They Matter</a></li>
+                    <li><a href="#moments">Memorable Moments</a></li>
+                    <li><a href="option2/logo-history.html">Logo History</a></li>
+                    <li><a href="option2/players.html">Player Cards</a></li>
+                    <li><a href="option2/gallery.html">Highlights & Gallery</a></li>
+                    <li><a href="option2/stats.html">Interactive Stats</a></li>
+                    <li><a href="option2/timeline.html">Franchise Timeline</a></li>
+                    <li><a href="option2/quiz.html">Trivia Quiz</a></li>
+                    <li><a href="option2/shop.html">Mock Shop</a></li>
+                    <li><a href="option2/index.html">Theme 2</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section id="hero">
+    <main>
+        <section id="hero">
         <h2>Welcome to Canucks Nation</h2>
         <p>Explore the history of the Vancouver Canucks, their greatest accomplishments, Hall of Fame icons, and the young stars defining the present. This franchise has built a legacy of skill, passion, and Vancouver pride through every blue and green season.</p>
         <p><strong>Motto:</strong> "True North Hockey — relentless together in blue and green."</p>
@@ -320,8 +339,11 @@
         </article>
     </section>
 
+    </main>
+
     <footer>
         <p>&copy; 2026 Vancouver Canucks Fan Page. All rights reserved.</p>
     </footer>
+    <script src="option2/scripts.js" defer></script>
 </body>
 </html>

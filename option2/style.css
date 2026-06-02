@@ -293,6 +293,7 @@ footer {
 
 .video-wrap {
     max-width: 800px;
+    margin: 0 auto;
 }
 
 .timeline {
@@ -301,4 +302,106 @@ footer {
 }
 .timeline li {
     margin-bottom: 10px;
+}
+
+/* Quiz Styling - Canucks Theme */
+#quiz {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(200, 39, 46, 0.3) 50%, rgba(217, 172, 24, 0.1) 100%);
+    padding: 24px;
+    border-radius: 12px;
+    border: 2px solid #C8102E;
+}
+
+#question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #D9AC18;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+#answers {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.quiz-btn {
+    background: linear-gradient(90deg, rgba(200, 39, 46, 0.4) 0%, rgba(217, 172, 24, 0.2) 100%);
+    color: #D9AC18;
+    border: 2px solid rgba(217, 172, 24, 0.6);
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.quiz-btn:hover:not(:disabled) {
+    background: linear-gradient(90deg, rgba(200, 39, 46, 0.7) 0%, rgba(217, 172, 24, 0.4) 100%);
+    border-color: #D9AC18;
+    transform: translateX(4px);
+}
+
+.quiz-btn:disabled {
+    opacity: 0.8;
+}
+
+.quiz-btn.correct {
+    background: linear-gradient(90deg, rgba(0, 132, 61, 0.8) 0%, rgba(116, 196, 224, 0.3) 100%);
+    border-color: #74C4E0;
+    color: #74C4E0;
+}
+
+.quiz-btn.wrong {
+    background: linear-gradient(90deg, rgba(200, 39, 46, 0.8) 0%, rgba(100, 20, 30, 0.6) 100%);
+    border-color: #C8102E;
+    color: #ff6b6b;
+}
+
+#quiz-result {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #D9AC18;
+    text-align: center;
+    margin-bottom: 16px;
+    min-height: 24px;
+}
+
+#quiz-score {
+    font-size: 1rem;
+    color: #D9AC18;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+#next-btn,
+#restart-btn {
+    background: linear-gradient(90deg, #C8102E 0%, #D9AC18 100%);
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 12px auto 0;
+}
+
+#next-btn:hover,
+#restart-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(200, 39, 46, 0.5);
+}
+
+#next-btn:disabled,
+#restart-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
